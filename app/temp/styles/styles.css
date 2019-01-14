@@ -1212,7 +1212,7 @@ a {
 /* remove forward slash (/) from paths when pushing to github pages */
 
 .icon{
-		background-image: url('../..assets/images/sprites/sprite-57047e84.svg');
+		background-image: url('../../assets/images/sprites/sprite-57047e84.svg');
 	}
 
 .icon--clear-view-escapes {
