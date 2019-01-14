@@ -1,0 +1,83 @@
+/* this file is auto generated, do not edit. look at gulp > templates */
+ /* remove forward slash (/) from paths when pushing to github pages */
+	.icon{
+		background-image: url('../..assets/images/sprites/sprite-57047e84.svg');
+	}
+	.icon--clear-view-escapes {
+		width: 142.4px;
+		height: 59.53px;
+		
+		background-position: 0 0;
+	}
+	.icon--comment {
+		width: 64px;
+		height: 64px;
+		
+		background-position: 0 73.78395061728395%;
+	}
+	.icon--facebook {
+		width: 21.23px;
+		height: 42.01px;
+		
+		background-position: 57.01245145533891% 34.78449915756291%;
+	}
+	.icon--fire {
+		width: 56px;
+		height: 64px;
+		
+		background-position: 29.767441860465116% 73.78395061728395%;
+	}
+	.icon--globe {
+		width: 64px;
+		height: 64px;
+		
+		background-position: 68.79227053140097% 0;
+	}
+	.icon--instagram {
+		width: 42.01px;
+		height: 42.01px;
+		
+		background-position: 71.45726887637015% 34.78449915756291%;
+	}
+	.icon--libra-logo {
+		width: 71px;
+		height: 60px;
+		
+		background-position: 0 35.86144578313253%;
+	}
+	.icon--mail {
+		width: 64px;
+		height: 48px;
+		
+		background-position: 34.29951690821256% 33.443820224719104%;
+	}
+	.icon--rain {
+		width: 64px;
+		height: 64px;
+		
+		background-position: 57.971014492753625% 73.78395061728395%;
+	}
+	.icon--star {
+		width: 64px;
+		height: 64px;
+		
+		background-position: 99.71014492753623% 0;
+	}
+	.icon--twitter {
+		width: 51.78px;
+		height: 42.06px;
+		
+		background-position: 94.15199343125627% 69.58790910079374%;
+	}
+	.icon--wifi {
+		width: 60px;
+		height: 64px;
+		
+		background-position: 97.81990521327015% 39.50617283950617%;
+	}
+	.icon--youtube {
+		width: 34.75px;
+		height: 42px;
+		
+		background-position: 0 99.7445652173913%;
+	}

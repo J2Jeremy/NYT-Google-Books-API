@@ -1,0 +1,15 @@
+/* this file is auto generated, do not edit. look at gulp > templates */
+ /* remove forward slash (/) from paths when pushing to github pages */
+{{#shapes}}
+	{{#first}}
+	.icon{
+		background-image: url('../..assets/images/sprites/{{{sprite}}}');
+	}
+	{{/first}}
+	.icon--{{base}} {
+		width: {{width.outer}}px;
+		height: {{height.outer}}px;
+		
+		background-position: {{position.relative.xy}};
+	}
+{{/shapes}}

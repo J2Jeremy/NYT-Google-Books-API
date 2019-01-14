@@ -1,0 +1,261 @@
+/* 12 col grid, row width 100%, 100/12, one col = 8.33% */
+.row{
+	@mixin clearfix;
+	/* negative margin and overflow hidden to adjust for padding, must not be over 100%
+		when adding any border, padding and width. border-box will help with this.
+	 */
+
+	/* gutters add space between columns */
+	&--gutters {
+		margin-right: -65px;
+	}
+
+	&--gutters-small{ 
+		margin-right: -45px;
+	}
+
+
+	&--gutters-large{
+		margin-right: -100px;
+	}
+
+	/* applies to children of row */
+	&--gutters > div{ 
+		padding-right:65px;
+	}
+
+	&--gutters-small > div{
+		padding-right:45px;
+	}
+
+	&--gutters-large > div{
+		padding-right:100px;
+	}
+
+	&--t-padding{
+		padding-top:80px;
+	}
+
+	&__b-margin-until-medium{
+		margin-bottom: 1rem;
+	}
+
+	&__b-margin{
+		margin-bottom:1.5rem;
+	}
+
+	@mixin atSmall{
+		&__small-1{
+			float:left;
+			width:8.33%;
+		}
+		&__small-2{
+			float:left;
+			width: 16.66%;
+		}	
+
+		&__small-3{
+			float:left;
+			width: 24.99%;
+		}
+
+		&__small-4{
+			float:left;
+			width: 33.33%;
+		}
+
+		&__small-4--larger{
+			width:37%;
+		}
+
+		&__small-5{
+			float:left;
+			width: 41.65%;
+		}
+
+		&__small-6{
+			float:left;
+			width:50%;
+		}
+		&__small-7{
+			float:left;
+			width: 58.31%;
+		}
+		&__small-8{
+			float:left;
+			width: 66.66%;
+		}	
+
+		&__small-8--smaller{
+			width:63%;
+		}
+		&__small-9{
+			float:left;
+			width:74.97%;
+		}
+		&__small-10{
+			float:left;
+			width: 83.3%;
+		}
+		&__small-11{
+			float:left;
+			width: 91.63%;
+		}
+		&__small-12{
+			float:left;
+			width:100%;
+		}
+	}
+	/* only show 2 col 4/8 split on medium screens or larger */
+	@mixin atMedium{
+		&__b-margin-until-medium{
+			margin-bottom: 0;
+		}
+		&__medium-1{
+			float:left;
+			width:8.33%;
+		}
+		&__medium-2{
+			float:left;
+			width: 16.66%;
+		}	
+
+		&__medium-3{
+			float:left;
+			width: 24.99%;
+		}
+
+		&__medium-4{
+			float:left;
+			width: 33.33%;
+		}
+
+		&__medium-4--larger{
+			width:37%;
+		}
+
+		&__medium-5{
+			float:left;
+			width: 41.65%;
+		}
+
+		&__medium-6{
+			float:left;
+			width:50%;
+		}
+		&__medium-7{
+			float:left;
+			width: 58.31%;
+		}
+		&__medium-8{
+			float:left;
+			width: 66.66%;
+		}	
+
+		&__medium-8--smaller{
+			width:63%;
+		}
+		&__medium-9{
+			float:left;
+			width:74.97%;
+		}
+		&__medium-10{
+			float:left;
+			width: 83.3%;
+		}
+		&__medium-11{
+			float:left;
+			width: 91.63%;
+		}
+		&__medium-12{
+			float:left;
+			width:100%;
+		}
+	}
+
+@mixin atLarge{
+
+		&__b-margin-until-medium{
+			margin-bottom: 0;
+		}
+		&__large-2{
+			float:left;
+			width: 16.66%;
+		}	
+
+		&__large-3{
+			float:left;
+			width: 24.99%;
+		}
+
+		&__large-4{
+			float:left;
+			width: 33.33%;
+		}
+
+		&__large-4--larger{
+			width:37%;
+		}
+
+		&__large-6{
+			float:left;
+			width:50%;
+		}
+
+		&__large-8{
+			float:left;
+			width: 66.66%;
+		}	
+
+		&__large-8--smaller{
+			width:63%;
+		}
+
+		&__medium-10{
+			float:left;
+			width: 83.3%;
+		}
+	}
+
+	/* begin equal height rules, using FLEXBOX */
+	&--equal-height-at-small{
+		@mixin atSmall{
+			display:flex;
+		} 
+		/* tell contents to FLEX to match tallest elements, target direct descendants */
+		& > div {
+			float:none;
+			display:flex;
+		}
+	} 
+	&--equal-height-at-medium{
+		@mixin atMedium{
+			display:flex;
+		} 
+		/* tell contents to FLEX to match tallest elements, target direct descendants */
+		& > div {
+			float:none;
+			display:flex;
+		}
+	}
+
+	&--equal-height-at-large{
+		@mixin atLarge{
+			display:flex;
+		} 
+		& > div {
+			float:none;
+			display:flex;
+		}
+	}
+
+}
+.grid-example{
+		color:#ffffff;
+		width:100%;
+		height:50px;
+		background-color:#333;
+		padding:1em;
+		margin-bottom:2em;
+		text-align:center;
+	}

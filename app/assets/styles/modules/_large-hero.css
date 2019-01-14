@@ -1,14 +1,58 @@
 .large-hero{
 	position:relative; 
-}
-/* position center of hero image */
-.large-hero__text-content{
-	position:absolute; /* position text on top of hero image */
-	left:0;
-	/* center horizontially*/
-	width:100%;
-	text-align: center;
-	/* center vertically */
-	top:50%; /* moves it closesr to center but needs to move up about 1/2 of its own height */
-	transform: translateY(-50%); /* translateY moves element vertically relative to itself 100% = pull down by its own height, -100 pulls up */
+	border-bottom: 10px solid $mainBlue;
+
+	/* position center of hero image */
+	&__text-content{
+		position:absolute; /* position text on top of hero image */
+		/* center horizontially*/
+		width:100%;
+		text-align: center;
+		/* center vertically */
+		left:0;
+		top:50%; /* moves it closesr to center but needs to move up about 1/2 of its own height */
+		transform: translateY(-50%); /* translateY moves element vertically relative to itself 100% = pull down by its own height, -100 pulls up */
+		padding-top:88px; /* padding = to logo height on mobile */
+		@mixin atMedium {
+			padding-top:60px; /* added more padding to account for header height */
+		}
+	}
+
+	&__image {
+		display:block; /* keeps white space away */
+	}
+
+	&__title{ /* baseline for all screens */
+		font-weight:300;
+		color:$mainBlue;
+		font-size: 2.4rem;
+		margin:0;
+		@mixin atSmall{ /* small text for 530px */
+			font-size: 4.8rem;
+		}
+	}
+
+	&__subtitle{
+		font-weight:300;
+		color:$mainBlue;
+		font-size: 1.5rem;
+		margin:0;
+		@mixin atSmall{
+			font-size: 2.9rem;
+		}
+	}
+	
+	&__description{
+		color:$mainBlue;
+		font-size: 1.1rem;
+		font-weight:100;
+		text-shadow: 2px 2px 0 rgba(0,0,0, .1); /* 2px offset, 0 blur, 10% visible */
+		max-width:30rem; /* want 2 lines of text, use REM to account for font size */
+		margin-left:auto; /* center */
+		margin-right:auto; /* center */
+
+		@mixin atSmall{
+			font-size: 1.875rem;
+		}
+	}
 }
