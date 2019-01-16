@@ -1,4 +1,4 @@
-# boilerplate
-just a little grid and some useful features I encountered during the udemy course that I wanted to extract for building future projects.
+# another example using two APIs, one from NYT to get rank and meta info and Googles book api for cover image
 
-https://j2jeremy.github.io/boilerplate/
+
+https://j2jeremy.github.io/NYT-Google-Books-API/
