@@ -4,22 +4,21 @@
 
 	/* position center of hero image */
 	&__text-content{
-		position:absolute; /* position text on top of hero image */
+		/*position:absolute;  position text on top of hero image */
 		/* center horizontially*/
 		width:100%;
 		text-align: center;
 		/* center vertically */
 		left:0;
-		top:50%; /* moves it closesr to center but needs to move up about 1/2 of its own height */
-		transform: translateY(-50%); /* translateY moves element vertically relative to itself 100% = pull down by its own height, -100 pulls up */
-		padding-top:88px; /* padding = to logo height on mobile */
-		@mixin atMedium {
-			padding-top:60px; /* added more padding to account for header height */
-		}
+		top:0;
+		padding-top:2em;
 	}
 
 	&__image {
-		display:block; /* keeps white space away */
+		display:inline-block; /* keeps white space away */
+		padding:1em;
+		height:80px;
+		margin:0 auto;
 	}
 
 	&__title{ /* baseline for all screens */
@@ -33,6 +32,7 @@
 	}
 
 	&__subtitle{
+
 		font-weight:300;
 		color:$mainBlue;
 		font-size: 1.5rem;

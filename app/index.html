@@ -6,6 +6,8 @@
 	<title>jamesy template</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet" type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet" type='text/css'>
 	<!-- build:css assets/styles/styles.css -->
 	<link rel="stylesheet" href="temp/styles/styles.css">
 	<!-- endbuild -->
@@ -13,182 +15,31 @@
 	<script src="/temp/scripts/Vendor.js"></script>
 	<!-- endbuild -->
 </head>
+
 <body>
-	<header class="site-header">
-		<div class="wrapper">
-			<div class="site-header__logo">
-				<div class="icon icon--libra-logo site-header__logo__graphic">clear view escapes</div>
-			</div>
-
-			<div class="site-header__menu-icon">
-				<div class="site-header__menu-icon__bar"></div>
-			</div>
-
-			<div class="site-header__menu-content">
-				<div class="site-header__btn-container">
-					<a href="#" class="btn open-modal">button txt</a>
-				</div>
-				<nav class="primary-nav primary-nav--pull-right">
-					<ul>
-						<li><a href="#our-beginning" id="our-beginning-link">link</a></li>
-						<li><a href="#features" id="features-link">link2</a></li>
-						<li><a href="#testimonials" id="testimonials-link">link3</a></li>  
-					</ul>  
-				</nav> 
-			</div>
-		</div>
-	</header>
-
-
-
 
 	<div class="large-hero">
-
-    <picture>
-      <source srcset="assets/images/banner-crumpled-header.jpg 1920w" media="(min-width: 1380px)">
-      <source srcset="assets/images/banner-crumpled-header-medium.jpg 990w" media="(min-width: 640px)">
-		  <img srcset="assets/images/banner-crumpled-header-small.jpg 640w" alt="hero image" class="large-hero__image">
-    </picture>
 		<div class="large-hero__text-content">
-      <div class="wrapper">
-  			<h1 class="large-hero__title">Boilerplate</h1>
-  			<h2 class="large-hero__subtitle">useful reusable things</h2>
-  			<p class="large-hero__description">like a grid floated or flex, header nav, buttons, lightbox</p>
-      </div>
+	   	<div class="wrapper">
+				<h2 class="large-hero__subtitle">New York Times + Google Books</h2>
+				<p class="large-hero__description">leveraging two APIs to show book rank and cover</p>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/387928/nyt-logo.png" height="80" id="nyt-logo"  class="large-hero__image">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png" height="80" class="large-hero__image">
+	   	</div>
 		</div>
 	</div>
 
 <div class="page-section">
 	<div class="wrapper">
-		<div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__medium-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-		</div>	
-		<div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
-			<div class="row__medium-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
-			<div class="row__medium-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
-			<div class="row__medium-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
-			<div class="row__medium-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
-			<div class="row__medium-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
+		<div id="reviews">
+		<!-- reviews -->
 		</div>
-		<div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
-			<div class="row__medium-3">
-				<div class="grid-example"><p>3col width</p></div>
-			</div>
-			<div class="row__medium-3">
-				<div class="grid-example"><p>3col width</p></div>
-			</div>
-			<div class="row__medium-3">
-				<div class="grid-example"><p>3col width</p></div>
-			</div>
-			<div class="row__medium-3">
-				<div class="grid-example"><p>3col width</p></div>
-			</div>
-		</div>
-		<div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
-			<div class="row__medium-4">
-				<div class="grid-example"><p>4col width</p></div>
-			</div>
-			<div class="row__medium-4">
-				<div class="grid-example"><p>4col width</p></div>
-			</div>
-			<div class="row__medium-4">
-				<div class="grid-example"><p>4col width</p></div>
-			</div>
-		</div>
-		<div class="row row--gutters-small row--equal-height-at-small generic-content-container">
-			<div class="row__small-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-			<div class="row__small-6">
-				<div class="grid-example"><p>6col width</p></div>
-			</div>
-		</div>
-		<div class="row row--gutters-small row--equal-height-at-small generic-content-container">
-			<div class="row__small-5">
-				<div class="grid-example"><p>5col width</p></div>
-			</div>
-			<div class="row__small-7">
-				<div class="grid-example"><p>7col width</p></div>
-			</div>
-		</div>
-		<div class="row row--gutters-small row--equal-height-at-small generic-content-container">
-			<div class="row__small-4">
-				<div class="grid-example"><p>4col width</p></div>
-			</div>
-			<div class="row__small-8">
-				<div class="grid-example"><p>8col width</p></div>
-			</div>
-		</div>		<div class="row row--gutters-small row--equal-height-at-medium generic-content-container">
-			<div class="row__medium-3">
-				<div class="grid-example"><p>3col width</p></div>
-			</div>
-			<div class="row__medium-9">
-				<div class="grid-example"><p>9col width</p></div>
-			</div>
-		</div>
-		<div class="row row--gutters-small row--equal-height-at-small generic-content-container">
-			<div class="row__small-12">
-				<div class="grid-example"><p>12col width</p></div>
-			</div>
+		<div id="best-seller-titles">
+		<!-- best sellers -->
 		</div>
 	</div>
 </div>
 
-
-
-    <footer class="site-footer">
-    <div class="wrapper">
-      <p>
-          <span class="site-footer__text">Copyright &copy; 2016 Duis aute ir. All rights reserved. </span><a href="#" class="btn btn--orange open-modal">Get in Touch</a>
-      </p>
-    </div>
-  </footer> 
-
-  <div class="modal">
-    <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
-
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-      </div>
-   
- 
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-      </div>
-  </div>
-      <div class="modal__close">X</div>
-  </div>
  <!-- build:js assets/scripts/App.js -->
   <script src="/temp/scripts/App.js"></script>
   <!-- endbuild -->
