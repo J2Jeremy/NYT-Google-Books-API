@@ -1,4 +1,4 @@
-#NYT books best sellers
+# NYT books best sellers
 another example using two APIs; one from NYT to get rank and meta info and Googles book api for cover image
 
 
